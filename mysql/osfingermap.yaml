@@ -1,34 +1,6 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 ---
-# Debian
-Debian-11:
-  serverpkg: mariadb-server
-  service: mariadb
-  clientpkg: mariadb-client
-  devpkg: libmariadbclient-dev
-  config:
-    append: |
-      !includedir /etc/mysql/conf.d/
-      # !includedir /etc/mysql/mariadb.conf.d/
-Debian-10:
-  serverpkg: mariadb-server
-  service: mariadb
-  clientpkg: mariadb-client
-  devpkg: libmariadbclient-dev
-  config:
-    append: |
-      !includedir /etc/mysql/conf.d/
-      # !includedir /etc/mysql/mariadb.conf.d/
-Debian-9:
-  serverpkg: mariadb-server
-  service: mariadb
-  clientpkg: mariadb-client
-  devpkg: libmariadbclient-dev
-  config:
-    append: |
-      !includedir /etc/mysql/conf.d/
-      # !includedir /etc/mysql/mariadb.conf.d/
 # Ubuntu
 Ubuntu-22.04:
   serverpkg: mariadb-server
